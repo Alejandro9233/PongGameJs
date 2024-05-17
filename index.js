@@ -146,6 +146,11 @@ function drawScores() {
     canvas.width - fontSize * 6.2,
     fontSize
   );
+  ctx.fillText(
+    "First to 3 wins!",
+    canvas.width / 2 - fontSize * 2,
+    canvas.height - fontSize
+  );
 }
 
 // Variables to store whether arrow keys are pressed
@@ -221,13 +226,13 @@ function updateBall() {
   if (ball.x + ball.radius > canvas.width) {
     playerScore++; // Increase player's score
     resetGame(); // Reset the game if the ball hits the right edge
-    if (playerScore === 1) {
+    if (playerScore === 3) {
       endGame(playerName);
     }
   } else if (ball.x - ball.radius < 0) {
     computerScore++; // Increase computer's score
     resetGame(); // Reset the game if the ball hits the left edge
-    if (computerScore === 7) {
+    if (computerScore === 3) {
       endGame("Computer");
     }
   }
