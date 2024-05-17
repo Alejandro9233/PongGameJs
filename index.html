@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PongGame</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="previewScreen">
+      <div id="card">
+        <h1>Welcome to PongGame</h1>
+        <p style="margin-top: -20px">By GitHub: Alejandro9233</p>
+        <!-- Añade tu nombre de usuario de GitHub aquí -->
+        <p>Enter your name</p>
+
+        <form id="gameForm" style="width: 60%">
+          <div id="row">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter username..."
+            />
+          </div>
+          <p>Choose a difficulty to start playing</p>
+
+          <div id="rowDiff">
+            <button id="easyButton" class="button" type="button" value="easy">
+              Easy
+            </button>
+            <button
+              id="mediumButton"
+              class="button"
+              type="button"
+              value="medium"
+            >
+              Medium
+            </button>
+            <button id="hardButton" class="button" type="button" value="hard">
+              Hard
+            </button>
+          </div>
+          <div id="row">
+            <button id="startButton" class="button" type="button" disabled>
+              Start Game
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <canvas id="pongCanvas"></canvas>
+    <script src="index.js"></script>
+  </body>
+</html>
