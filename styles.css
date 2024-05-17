@@ -201,3 +201,29 @@ body {
   flex-direction: column;
   gap: 20px;
 }
+
+@media only screen and (max-width: 1200px) {
+  #card {
+    width: 80%;
+    height: 75%;
+  }
+  #card h1 {
+    font-size: 2rem;
+  }
+  #card p {
+    font-size: 1rem;
+  }
+  #gameForm input {
+    width: 200px;
+    font-size: 1.2rem;
+  }
+  #startButton {
+    font-size: 1.5rem;
+    width: 150px;
+    height: 50px;
+  }
+  .button {
+    width: 80px;
+    font-size: 1.1rem;
+  }
+}
