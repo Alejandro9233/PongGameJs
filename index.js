@@ -267,10 +267,7 @@ function endGame(winner) {
 
   alert(endGameMessage);
 
-  restartButton.addEventListener("click", () => {
-    // Refresca la página cuando se hace clic en el botón de reinicio
-    location.reload();
-  });
+  location.reload();
 }
 
 function updateComputerPaddle() {
