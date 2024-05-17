@@ -1,0 +1,203 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #000;
+  margin: 0;
+}
+#pongCanvas {
+  max-width: 90%;
+  max-height: 90vh;
+  border: 1px solid transparent;
+  box-shadow: 0px 0px 10px 10px rgb(143, 143, 143);
+  animation: none;
+}
+#previewScreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+}
+#card {
+  width: 40%;
+  height: 75%;
+  background: #000000;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.186);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: shadow-pulse 2s infinite;
+}
+#card h1 {
+  font-size: 3rem;
+  font-family: Garamond, serif;
+}
+#card p {
+  font-size: 1.2rem;
+  font-family: Garamond, serif;
+}
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.186);
+  }
+  50% {
+    box-shadow: 0px 0px 15px 15px rgba(255, 255, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.186);
+  }
+}
+@keyframes shadow-pulse-easy {
+  0% {
+    box-shadow: 0px 0px 10px 10px rgba(117, 255, 25, 0.905);
+  }
+  50% {
+    box-shadow: 0px 0px 15px 15px rgba(117, 255, 25, 0.905);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 10px rgba(117, 255, 25, 0.905);
+  }
+}
+
+@keyframes shadow-pulse-medium {
+  0% {
+    box-shadow: 0px 0px 10px 10px rgba(255, 182, 25, 0.905);
+  }
+  50% {
+    box-shadow: 0px 0px 15px 15px rgba(255, 182, 25, 0.905);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 10px rgba(255, 182, 25, 0.905);
+  }
+}
+
+@keyframes shadow-pulse-hard {
+  0% {
+    box-shadow: 0px 0px 10px 10px rgba(255, 1, 1, 0.814);
+  }
+  50% {
+    box-shadow: 0px 0px 15px 15px rgba(255, 1, 1, 0.814);
+  }
+  100% {
+    box-shadow: 0px 0px 10px 10px rgba(255, 1, 1, 0.814);
+  }
+}
+
+#startButton {
+  padding: 10px 20px;
+  background: #fff;
+  color: #000;
+  border: none;
+}
+
+#gameForm label {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#gameForm input {
+  padding: 10px;
+  border: transparent;
+  text-align: center;
+  width: 250px;
+  height: max-content;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  background: transparent;
+  color: #ffffff;
+
+  transition: all 1s ease;
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.186);
+}
+
+#gameForm input:focus {
+  background-color: #fff;
+  color: #000;
+  scale: 1.07;
+}
+
+#row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#rowDiff {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.button {
+  color: white;
+  padding: 10px 20px;
+  background: #fff;
+  border: transparent;
+  border-radius: 10px;
+  transition: all 1s ease;
+  width: 100px;
+  text-align: center;
+  font-size: 1.3rem;
+  font-family: Garamond, serif;
+  height: fit-content;
+}
+
+.button:hover:not(:disabled),
+.button:focus:not(:disabled) {
+  scale: 1.1;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  opacity: 0.5;
+  scale: 1;
+}
+
+#easyButton {
+  background: #4caf50;
+  box-shadow: 0px 0px 10px 10px rgba(117, 255, 25, 0.905);
+}
+
+#mediumButton {
+  background: #ff9800;
+  box-shadow: 0px 0px 10px 10px rgba(255, 182, 25, 0.905);
+}
+
+#hardButton {
+  background: #f44336;
+  box-shadow: 0px 0px 10px 10px rgba(255, 1, 1, 0.814);
+}
+
+#startButton {
+  font-size: 2rem;
+  width: 200px;
+  height: 60px;
+  color: #000;
+  box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.186);
+}
+
+#gameForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
