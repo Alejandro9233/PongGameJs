@@ -1,4 +1,3 @@
-content: |-
 <div style="background-color: #f0f0f0; padding: 20px; border-radius: 8px;">
   <h1 style="color: #333; font-size: 28px; margin-bottom: 10px;">New Pong Game Available!</h1>
   <p style="color: #555; font-size: 16px; margin-bottom: 20px;">
