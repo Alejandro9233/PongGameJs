@@ -4,7 +4,7 @@ content: |-
   <p style="color: #555; font-size: 16px; margin-bottom: 20px;">
     Check out my new Pong game! Test your coordination and reflexes in this classic arcade game.
   </p>
-  <a href="https://ponggamejs.onrender.com" style="display: inline-block; background-color: #007bff; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 4px; font-size: 16px; margin-bottom: 20px;">
+  <a href="https://ponggamejs.onrender.com" target="_blank" style="display: inline-block; background-color: #007bff; color: #fff; text-decoration: none; padding: 10px 20px; border-radius: 4px; font-size: 16px; margin-bottom: 20px;">
     Play Now
   </a>
   <p style="color: #555; font-size: 14px; margin-bottom: 0;">
